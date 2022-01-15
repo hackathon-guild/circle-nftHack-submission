@@ -2,50 +2,61 @@
   <v-layout>
     <v-flex>
       <v-card class="body-1 px-6 py-8 mb-4" max-width="800" outlined>
-        <h1 class="headline">Welcome to the sample payments application</h1>
+        <h1 class="headline">
+          Welcome to the demo app for  NFT's payouts with Circle
+        </h1>
 
         <p class="mt-6">
-          This sample web application demonstrates some of the features of the
+          This sample web application demonstrates utility of
           <a href="https://www.circle.com/en/developers" target="_blank">
             Circle APIs
           </a>
+          for allowing user to receive their
+          <a href="" target="_blank">
+            funding from zora based auction 
+          </a>
+          in USDC  via fast feeless offchain API's , whereas the transactions are committed to be completed onchain .
         </p>
 
         <p class="font-weight-bold mt-8">This app provides:</p>
 
         <ul>
-          <li>a sample UI implementation of common payments flows</li>
-          <li>an api explorer to preview payload and response data</li>
+          <li>a sample UI showing the currently auctioned NFT's</li>
+          <li>
+            And the particular user can try to get their returns in USDC in
+            banking account
+          </li>
         </ul>
       </v-card>
 
       <v-card class="body-1 px-6 py-8 mb-4" max-width="800" outlined>
-        <h2 class="title">Example UI implementation</h2>
+        <h2 class="title">Steps : </h2>
 
         <p class="mt-2">
           Explore the sample applications using your private api key.
         </p>
-
-        <p class="font-weight-bold mt-6">Make payment UI</p>
-        <p class="font-weight-light">
-          Example form that combines adding card details and making a payment.
+        <p class="font-weight-bold mt-6">
+          Step 1: search for the zora / rarible based NFT on your address.
+        <br>
+         <v-btn href="/flow/charge" color="primary"> Zora Auction  </v-btn>
+         <v-btn href="/flow/charge" color="primary">  Rarible Auction </v-btn>
         </p>
+        
+
+        <p class="font-weight-bold mt-6">
+          Step 2 : Adding card details for registeration and paying charge
+        </p>
+       
         <p>
-          <v-btn href="/flow/charge" color="primary"> Charge flow </v-btn>
-        </p>
-
-        <p class="font-weight-bold mt-6">Use existing card UI</p>
-        <p class="font-weight-light">
-          Example form to make payment by selecting a previously added card.
-          Card information is only saved in your browser using local storage.
-        </p>
+          <v-btn href="/flow/charge" color="primary"> Add card details </v-btn>
+        
         <p>
           <v-btn href="/flow/charge/existing-card" color="primary">
-            Select card flow
+           Use existing registered card
           </v-btn>
         </p>
 
-        <p class="font-weight-bold mt-6">Add card UI</p>
+        <p class="font-weight-bold mt-6">Step 3:</p>
         <p class="font-weight-light">Simple form to enter card details.</p>
 
         <p>
